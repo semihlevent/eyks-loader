@@ -61,3 +61,32 @@ body {
 	right: 0;
 	margin-right: -0.95em;
 }
+
+.tri-down {
+	position: absolute;
+	width: 0;
+	height: 0;
+	z-index: 2;
+	border-top: 3.5em solid brown;
+	border-left: 2em solid transparent;
+	border-right: 2em solid transparent;
+
+	top: calc(50% - 1em);
+	left: 0;
+	margin-left: -0.95em;
+}
+
+.tri-down-white {
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 0;
+	z-index: 1;
+	border-top: 3.5em solid white;
+	border-left: 2em solid transparent;
+	border-right: 2em solid transparent;
+
+	top: calc(50% - 0.45em);
+	left: 0;
+	margin-left: -0.95em;
+}

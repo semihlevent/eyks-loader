@@ -6,6 +6,7 @@ const Loader = () => {
             <div className="tri-up"></div>
             <div className="tri-up-white"></div>
             <div className="tri-down"></div>
+            <div className="tri-down-white"></div>
         </div>
     );
 }
