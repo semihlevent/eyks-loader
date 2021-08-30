@@ -1,9 +1,11 @@
 import React from 'react';
+import Loader from './Loader';
+import './resources/style.css';
 
 
 const App = () => {
     return (
-        <div>LOG</div>
+        <div><Loader /></div>
     );
 }
 

@@ -1,0 +1,63 @@
+body {
+	background-color: beige;
+	margin: 0;
+}
+
+#root {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.eyks-loader-container {
+	height: 20em;
+	width: 20em;
+	background-color: brown;
+	border-radius: 50%;
+	position: relative;
+	font-size: 15px;
+	mix-blend-mode: multiply;
+}
+
+.eyks-loader-container::before {
+	position: absolute;
+	content: "";
+
+	top: 1.75em;
+	bottom: 1.75em;
+	right: 1.75em;
+	left: 1.75em;
+
+	background-color: white;
+	border-radius: 50%;
+}
+
+.tri-up {
+	position: absolute;
+	width: 0;
+	height: 0;
+	z-index: 2;
+	border-bottom: 3.5em solid brown;
+	border-left: 2em solid transparent;
+	border-right: 2em solid transparent;
+
+	top: calc(50% - 1.9em);
+	right: 0;
+	margin-right: -0.95em;
+}
+
+.tri-up-white {
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 0;
+	z-index: 1;
+	border-bottom: 3.5em solid white;
+	border-left: 2em solid transparent;
+	border-right: 2em solid transparent;
+
+	top: calc(50% - 2.45em);
+	right: 0;
+	margin-right: -0.95em;
+}
