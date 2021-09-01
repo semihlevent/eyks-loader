@@ -10,17 +10,23 @@ body {
 	align-items: center;
 }
 
-.eyks-loader-container {
-	height: 20em;
-	width: 20em;
-	background-color: brown;
-	border-radius: 50%;
-	position: relative;
+.eyks-loader {
 	font-size: 15px;
+	font-family: monospace;
+	position: relative;
 	mix-blend-mode: multiply;
 }
 
-.eyks-loader-container::before {
+.eyks-arrow {
+	height: 20em;
+	width: 20em;
+	background-color: rgba(154, 27, 21, 255);
+	/* #9a1b15 */
+	border-radius: 50%;
+	position: relative;
+}
+
+.eyks-arrow::before {
 	position: absolute;
 	content: "";
 
@@ -38,11 +44,12 @@ body {
 	width: 0;
 	height: 0;
 	z-index: 2;
-	border-bottom: 3.5em solid brown;
+	border-bottom: 3.5em solid rgba(154, 27, 21, 255);
 	border-left: 2em solid transparent;
 	border-right: 2em solid transparent;
 
-	top: calc(50% - 1.9em);
+	top: 50%;
+	transform: translateY(-50%);
 	right: 0;
 	margin-right: -0.95em;
 }
@@ -57,7 +64,8 @@ body {
 	border-left: 2em solid transparent;
 	border-right: 2em solid transparent;
 
-	top: calc(50% - 2.45em);
+	top: 50%;
+	transform: translateY(calc(-50% - 1em));
 	right: 0;
 	margin-right: -0.95em;
 }
@@ -67,11 +75,12 @@ body {
 	width: 0;
 	height: 0;
 	z-index: 2;
-	border-top: 3.5em solid brown;
+	border-top: 3.5em solid rgba(154, 27, 21, 255);
 	border-left: 2em solid transparent;
 	border-right: 2em solid transparent;
 
-	top: calc(50% - 1em);
+	top: 50%;
+	transform: translateY(-50%);
 	left: 0;
 	margin-left: -0.95em;
 }
@@ -86,7 +95,29 @@ body {
 	border-left: 2em solid transparent;
 	border-right: 2em solid transparent;
 
-	top: calc(50% - 0.45em);
+	top: 50%;
+	transform: translateY(calc(-50% + 1em));
 	left: 0;
 	margin-left: -0.95em;
+}
+
+.status-bar-container {
+	height: 0.3em;
+	border: 1px solid rgba(154, 27, 21, 0.2);
+	border-radius: 0.3em;
+
+	position: absolute;
+	top: 50%;
+	left: 17%;
+	right: 17%;
+	transform: translateY(-50%);
+	/* overflow: hidden; */
+}
+
+.status-bar {
+	height: 100%;
+	border-radius: 0.3em;
+	width: 15%;
+	background-color: rgba(154, 27, 21, 255);
+	box-shadow: 0px 0px 0.85em 0.1em rgba(201, 37, 28);
 }
