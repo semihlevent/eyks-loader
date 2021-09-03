@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Loader from './Loader';
+import EyksLoader from './EyksLoader';
 import './resources/style.css';
 
 
@@ -9,7 +9,7 @@ const App = () => {
     setTimeout(() => setDone(true), 8000)
 
     return (
-        <div><Loader done={done} /></div>
+        <div><EyksLoader done={done} /></div>
     );
 }
 

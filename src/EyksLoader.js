@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
 
-const Loader = ({ done }) => {
+const EyksLoader = ({ done }) => {
     const [progress, setProgress] = useState(0);
 
     useEffect(() => {
@@ -36,4 +36,4 @@ const Loader = ({ done }) => {
     );
 }
 
-export default Loader;
+export default EyksLoader;
