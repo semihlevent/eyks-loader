@@ -21,20 +21,17 @@ const Loader = ({ done }) => {
 
     const width = `${progress}%`;
     return (
-        <div className="loader-container">
-            <div className="eyks-loader">
-                <div className="eyks-arrow">
-                    <div className="tri-up"></div>
-                    <div className="tri-up-white"></div>
-                    <div className="tri-down"></div>
-                    <div className="tri-down-white"></div>
-                </div>
-                <div className="status-bar-container">
-                    <div className="status-bar" 
-                        style={{ width }}
-                    >
-                        {/* <div className="eyks-font">e-YKS</div> */}
-                    </div>
+        <div className="eyks-loader">
+            <div className="eyks-arrow">
+                <div className="tri-up"></div>
+                <div className="tri-up-white"></div>
+                <div className="tri-down"></div>
+                <div className="tri-down-white"></div>
+            </div>
+            <div className="status-bar-container">
+                <div className="status-bar" 
+                    style={{ width }}
+                >
                 </div>
             </div>
         </div>

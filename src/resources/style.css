@@ -13,28 +13,19 @@ body {
 	align-items: center;
 }
 
-.loader-container {
-	font-size: 8px;
-	padding: 3em;
-	background-color: white;
-	border-radius: 50%;
-	mix-blend-mode: multiply;
-}
-
 .eyks-loader {
 	font-family: "Source Sans Pro", "Open Sans", "Helvetica Neue", Helvetica,
 		Arial, sans-serif;
 	position: relative;
 	background-color: white;
 	border-radius: 50%;
-	/* mix-blend-mode: multiply; */
-	isolation: isolate;
+	mix-blend-mode: multiply;
+	font-size: 8px;
 }
 
 .eyks-arrow {
 	height: 20em;
 	width: 20em;
-	/* background-color: rgba(154, 27, 21, 255); */
 	background-color: rgba(154, 27, 21, 255);
 	border-radius: 50%;
 	position: relative;
@@ -83,7 +74,6 @@ body {
 	position: absolute;
 	width: 0;
 	height: 0;
-	/* z-index: 0; */
 	border-bottom: 3.5em solid white;
 	border-left: 2em solid transparent;
 	border-right: 2em solid transparent;
@@ -114,7 +104,6 @@ body {
 	position: absolute;
 	width: 0;
 	height: 0;
-	/* z-index: 0; */
 	border-top: 3.5em solid white;
 	border-left: 2em solid transparent;
 	border-right: 2em solid transparent;
@@ -135,7 +124,6 @@ body {
 	left: 17%;
 	right: 17%;
 	transform: translateY(-50%);
-	/* overflow: hidden; */
 }
 
 .status-bar {
@@ -156,16 +144,6 @@ body {
 	background-color: rgb(190, 4, 4);
 	box-shadow: 0px 0px 0.8em 0.05em rgb(190, 4, 4);
 	animation: shine 1000ms linear 300ms infinite alternate;
-}
-
-.eyks-font {
-	font-size: 2.5em;
-	font-weight: bold;
-	color: rgba(154, 27, 21, 255);
-	position: absolute;
-	text-align: center;
-	width: 100%;
-	transform: translateY(-120%);
 }
 
 @keyframes shine {
