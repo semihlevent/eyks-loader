@@ -2,9 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 
 const Loader = ({ done }) => {
-
     const [progress, setProgress] = useState(0);
-
 
     useEffect(() => {
         const interval = setInterval(() => {
