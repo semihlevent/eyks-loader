@@ -1,19 +1,21 @@
 import React, { useState, useEffect } from 'react';
 
 
-const Loader = () => {
+const Loader = ({ done }) => {
 
     const [progress, setProgress] = useState(0);
 
 
     useEffect(() => {
         const interval = setInterval(() => {
-            if (progress < 100) {
+            if (done) {
+                setProgress(100);
+            } else if (progress < 100) {
                 const remaining = 100 - progress;
-                const increase = remaining * (0.05 * remaining / 100);
+                const increase = remaining * (0.03 * remaining / 100);
                 setProgress(progress + increase);
             }
-        }, 500);
+        }, 300);
         return () => clearInterval(interval);
     }, );
 
@@ -31,7 +33,7 @@ const Loader = () => {
                     <div className="status-bar" 
                         style={{ width }}
                     >
-
+                        {/* <div className="eyks-font">e-YKS</div> */}
                     </div>
                 </div>
             </div>
