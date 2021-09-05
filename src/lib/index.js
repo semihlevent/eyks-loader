@@ -8,3 +8,7 @@
 -statusBar
 -shiningColor
 */
+
+import EyksLoader from "./EyksLoader";
+
+export { EyksLoader };

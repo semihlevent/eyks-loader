@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-import '../resources/style.css';
+import './style.css';
 
 /**
  * A number between 0 - 10. 10 is fastest.
