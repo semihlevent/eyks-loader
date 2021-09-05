@@ -1,7 +1,7 @@
 {
   "name": "eyks-loader",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "author": "Semih Levent",
   "keywords": ["loader", "eyks"],
   "main": "dist/index.js",
