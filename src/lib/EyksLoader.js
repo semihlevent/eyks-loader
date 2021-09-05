@@ -17,7 +17,7 @@ const convertSpeedToMs = speed => {
 }
 
 
-const EyksLoader = ({ size=8, color="rgba(154, 27, 21, 255)", shiningColor="rgb(190, 4, 4)",
+const EyksLoader = ({ size=8, color="rgba(154, 27, 21, 255)", glowingColor="rgb(190, 4, 4)",
                         speed=1.5, statusBar, done }) => {
     const fontSize = `${size}px`;
     const animationDuration = convertSpeedToMs(speed);
@@ -34,13 +34,13 @@ const EyksLoader = ({ size=8, color="rgba(154, 27, 21, 255)", shiningColor="rgb(
                 statusBar={statusBar} 
                 done={done} 
                 color={color} 
-                shiningColor={shiningColor} 
+                glowingColor={glowingColor} 
             />
         </div>
     );
 }
 
-const StatusBar = ({ statusBar, done, color, shiningColor }) => {
+const StatusBar = ({ statusBar, done, color, glowingColor }) => {
 
     const [progress, setProgress] = useState(0);
 
@@ -67,7 +67,7 @@ const StatusBar = ({ statusBar, done, color, shiningColor }) => {
                 style={{ width, backgroundColor: color }}
             >
                 <div className="status-bar-after" 
-                    style={{ backgroundColor: shiningColor, color: shiningColor }}
+                    style={{ backgroundColor: glowingColor, color: glowingColor }}
                 />
             </div>
         </div>

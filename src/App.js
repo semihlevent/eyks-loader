@@ -12,7 +12,6 @@ const App = () => {
         <div>
             <EyksLoader 
                 done={done} 
-                speed={1.5}
                 statusBar
                 size={20}
             />

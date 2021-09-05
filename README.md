@@ -9,7 +9,7 @@ Below are the props that can be used to customize loader:
 -speed
 -statusBar
 -done
--shiningColor
+-glowingColor
 
 ## `size`
 
@@ -32,6 +32,6 @@ Status bar prop is a boolean property. Default value is `false`. When set to `tr
 Done prop is a boolean property. Default value is false.
 When set to `true` status bar progress set to 100% in 300ms
 
-## `shiningColor`
+## `glowingColor`
 
-Shining color prop is a css color property. Default value is `rgb(190, 4, 4)`. This value is used in status bar to add shining effect.
+Glowing color prop is a css color property. Default value is `rgb(190, 4, 4)`. This value is used in status bar to add glowing effect.
