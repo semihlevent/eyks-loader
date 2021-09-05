@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import EyksLoader from './EyksLoader';
-import './resources/style.css';
+import EyksLoader from './lib/EyksLoader';
+
 
 
 const App = () => {
@@ -9,7 +9,15 @@ const App = () => {
     setTimeout(() => setDone(true), 8000)
 
     return (
-        <div><EyksLoader done={done} /></div>
+        <div>
+            <EyksLoader 
+                done={done} 
+                speed={1.5}
+                statusBar
+                size={20}
+            />
+        
+        </div>
     );
 }
 

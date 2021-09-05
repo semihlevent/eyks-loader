@@ -14,22 +14,19 @@ body {
 }
 
 .eyks-loader {
-	font-family: "Source Sans Pro", "Open Sans", "Helvetica Neue", Helvetica,
-		Arial, sans-serif;
 	position: relative;
 	background-color: white;
 	border-radius: 50%;
 	mix-blend-mode: multiply;
-	font-size: 8px;
 }
 
 .eyks-arrow {
 	height: 20em;
 	width: 20em;
-	background-color: rgba(154, 27, 21, 255);
 	border-radius: 50%;
 	position: relative;
-	animation: spin 8s linear infinite 300ms;
+	animation: spin linear infinite;
+	animation-delay: 300ms;
 }
 
 @keyframes spin {
@@ -59,7 +56,7 @@ body {
 	width: 0;
 	height: 0;
 	z-index: 1;
-	border-bottom: 3.5em solid rgba(154, 27, 21, 255);
+	border-bottom: 3.5em solid;
 	border-left: 2em solid transparent;
 	border-right: 2em solid transparent;
 
@@ -89,7 +86,7 @@ body {
 	width: 0;
 	height: 0;
 	z-index: 1;
-	border-top: 3.5em solid rgba(154, 27, 21, 255);
+	border-top: 3.5em solid;
 	border-left: 2em solid transparent;
 	border-right: 2em solid transparent;
 
@@ -116,7 +113,7 @@ body {
 
 .status-bar-container {
 	height: 0.3em;
-	border: 1px solid rgba(154, 27, 21, 0.5);
+	border: 1px solid;
 	border-radius: 0.3em;
 
 	position: absolute;
@@ -130,19 +127,16 @@ body {
 	position: relative;
 	height: 100%;
 	border-radius: 0.3em;
-	background-color: rgba(154, 27, 21, 255);
-	transition: all 300ms linear;
+	transition: width 300ms linear;
 }
 
-.status-bar::after {
-	content: "";
+.status-bar-after {
 	position: absolute;
 	top: 0;
 	bottom: 0;
 	left: 0;
 	right: 0;
-	background-color: rgb(190, 4, 4);
-	box-shadow: 0px 0px 0.8em 0.05em rgb(190, 4, 4);
+	box-shadow: 0px 0px 0.8em 0.07em;
 	animation: shine 1000ms linear 300ms infinite alternate;
 }
 
