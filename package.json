@@ -4,9 +4,8 @@
   "private": false,
   "author": "Semih Levent",
   "keywords": ["loader", "eyks"],
-  "main": "dist/index.js",
-  "module": "dist/index.js",
-  "files": [ "dist", "README.md" ],
+  "main": "lib/index.js",
+  "files": ["README.md"],
   "repository": {
       "type": "git",
       "url": "git+https://github.com/semihlevent/eyks-loader.git"
