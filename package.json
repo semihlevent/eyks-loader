@@ -1,54 +1,20 @@
 {
   "name": "eyks-loader",
-  "version": "0.1.0",
+  "version": "1.0.1",
   "private": false,
   "author": "Semih Levent",
-  "keywords": ["loader", "eyks"],
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack"
+},
+  "keywords": ["loader", "eyks", "eyks-loader"],
   "main": "lib/index.js",
-  "files": ["README.md"],
   "repository": {
       "type": "git",
       "url": "git+https://github.com/semihlevent/eyks-loader.git"
   },
+  "peerDependencies": {
 
-
-  "dependencies": {
-    "@babel/polyfill": "^7.12.1",
-    "@testing-library/jest-dom": "^5.14.1",
-    "@testing-library/react": "^11.2.7",
-    "@testing-library/user-event": "^12.8.3",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-scripts": "4.0.3",
-    "web-vitals": "^1.1.2"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
-  "devDependencies": {
-    "@babel/cli": "^7.15.4",
-    "@babel/core": "^7.15.5",
-    "@babel/preset-env": "^7.15.4"
   }
+  
 }
