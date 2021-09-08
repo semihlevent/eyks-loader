@@ -3,17 +3,24 @@ const path = require('path');
 
 module.exports = {
     mode: 'production',
-    entry: './index.js',
+    devtool: 'inline-source-map',
+    entry: path.join(__dirname, "src", "lib", "index.js"),
     output: {
-      path: path.resolve('dist'),
+      path: path.resolve(__dirname, 'dist'),
+      publicPath: '/',
       filename: 'index.js',
     },
     module: {
       rules: [
         {
           test: /\.js?$/,
-          exclude: /(node_modules)/,
-          use: 'babel-loader',
+          exclude: /node_modules/,
+          use:{
+            loader: "babel-loader",
+            options: {
+              presets: ['@babel/preset-env', '@babel/preset-react']
+            }
+          },
         },
         {
           test: /\.css$/,
@@ -26,8 +33,8 @@ module.exports = {
     },
     resolve: {
       alias: {
-        'react': path.resolve(__dirname, './node_modules/react'),
-        'react-dom': path.resolve(__dirname, './node_modules/react-dom'),
+        'react': path.resolve('node_modules/react'),
+        'react-dom': path.resolve('node_modules/react-dom'),
       }
     },
     externals: {
