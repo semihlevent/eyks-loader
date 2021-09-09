@@ -1,6 +1,6 @@
 {
   "name": "eyks-loader",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "private": false,
   "author": "Semih Levent",
   "license": "MIT",
@@ -13,6 +13,7 @@
     "eyks",
     "eyks-loader"
   ],
+  "files": ["dist", "README.md"],
   "main": "dist/index.js",
   "module": "dist/index.js",
   "repository": {
