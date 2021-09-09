@@ -1,6 +1,6 @@
 {
   "name": "eyks-loader",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "private": false,
   "author": "Semih Levent",
   "license": "MIT",
@@ -13,7 +13,10 @@
     "eyks",
     "eyks-loader"
   ],
-  "files": ["dist", "README.md"],
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "main": "dist/index.js",
   "module": "dist/index.js",
   "repository": {
@@ -39,7 +42,5 @@
     "webpack-cli": "^4.8.0",
     "webpack-dev-server": "^4.1.1"
   },
-  "dependencies": {
-    "@babel/polyfill": "^7.12.1"
-  }
+  "dependencies": {}
 }
