@@ -1,12 +1,12 @@
 {
   "name": "eyks-loader",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "private": false,
   "author": "Semih Levent",
   "license": "MIT",
   "scripts": {
     "start": "webpack serve",
-    "build": "webpack --config webpack.config.lib.js"
+    "build": "babel src/lib --out-dir dist --copy-files"
   },
   "keywords": [
     "loader",
@@ -42,5 +42,8 @@
     "webpack-cli": "^4.8.0",
     "webpack-dev-server": "^4.1.1"
   },
-  "dependencies": {}
+  "dependencies": {
+    "@babel/polyfill": "^7.12.1",
+    "styled-components": "^5.3.1"
+  }
 }

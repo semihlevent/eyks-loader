@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-// import EyksLoader from './lib/EyksLoader';
-import { EyksLoader } from '../dist/index';
+import EyksLoader from './lib/EyksLoader';
+import './app.css';
+// import EyksLoader from '../dist/EyksLoader';
 
 
 
@@ -14,6 +15,8 @@ const App = () => {
             <EyksLoader 
                 done={done} 
                 statusBar
+                size={20}
+                spinDelay={300}
             />
         
         </div>

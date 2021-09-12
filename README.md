@@ -4,12 +4,19 @@ Eyks loader is a React component used in e-BDS (Electronic Board Meeting) applic
 
 Below are the props that can be used to customize loader:
 
--size
--color
--speed
--statusBar
--done
--glowingColor
+#### -size
+
+#### -color
+
+#### -speed
+
+#### -spinDelay
+
+#### -statusBar
+
+#### -done
+
+#### -glowingColor
 
 ## `size`
 
@@ -22,6 +29,10 @@ Color prop is a css color property. Default value is `rgba(154, 27, 21, 255)`. T
 ## `speed`
 
 Speed prop is a numeric property. Set the speed as desired between 0 to 10. Default value is `1.5`
+
+## `spinDelay`
+
+Spin delay prop is a numeric property. Set the spinDelay as desired milisecond value. There is no delay by default
 
 ## `statusBar`
 
