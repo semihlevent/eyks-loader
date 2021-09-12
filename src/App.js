@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import EyksLoader from './lib/EyksLoader';
+// import EyksLoader from './lib/EyksLoader';
+import {EyksLoader} from '../dist';
 import './app.css';
 
 

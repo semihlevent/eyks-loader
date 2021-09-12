@@ -1,6 +1,6 @@
 {
   "name": "eyks-loader",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "private": false,
   "author": "Semih Levent",
   "license": "MIT",
@@ -43,7 +43,7 @@
     "webpack-dev-server": "^4.1.1"
   },
   "dependencies": {
-    "@babel/polyfill": "^7.12.1",
+    "core-js": "^3.17.3",
     "styled-components": "^5.3.1"
   }
 }
