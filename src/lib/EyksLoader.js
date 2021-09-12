@@ -143,8 +143,9 @@ const EyksLoader = ({ size=8, color="rgba(154, 27, 21, 255)", spinDelay=0, glowi
 }
 
 const StatusBarContainer = styled.div`
+&{
     height: 0.3em;
-	border: 1px solid;
+	
 	border-radius: 0.3em;
     border-color: ${props => props.color};
 	position: absolute;
@@ -152,6 +153,18 @@ const StatusBarContainer = styled.div`
 	left: 17%;
 	right: 17%;
 	transform: translateY(-50%);
+}
+    
+&::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: -1;
+}
 
 `;
 

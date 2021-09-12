@@ -22,11 +22,10 @@ const App = () => {
         //     <p>Rem, quidem expedita vitae nisi optio totam labore doloremque odio provident necessitatibus maxime, in excepturi dolores inventore tempore ea recusandae. Iste corporis tempore consectetur fugiat unde repellendus minima nesciunt exercitationem natus facilis itaque corrupti quas perspiciatis quia eaque accusantium inventore nam aut saepe, aspernatur maxime ea consequuntur dolorem aperiam? Nulla!</p>
         // </div>
         <EyksLoader 
-        // done={done} 
-        done
-        statusBar
-        size={20}
-        spinDelay={300}
+            done={done} 
+            statusBar
+            size={15}
+            spinDelay={300}
     />
     );
 }
