@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import EyksLoader from './lib/EyksLoader';
 import './app.css';
-// import EyksLoader from '../dist/EyksLoader';
+
 
 
 

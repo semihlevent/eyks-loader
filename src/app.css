@@ -1,0 +1,14 @@
+html {
+	background-color: gainsboro;
+}
+body {
+	background-color: gainsboro;
+	margin: 0;
+}
+
+#root {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
