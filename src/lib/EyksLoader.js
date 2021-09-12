@@ -17,11 +17,13 @@ const convertSpeedToMs = speed => {
 }
 
 const Container = styled.div`
-    font-size: ${props => `${props.size}px`};
     position: relative;
+    font-size: ${props => `${props.size}px`};
     background-color: white;
     border-radius: 50%;
     mix-blend-mode: multiply;
+    width: 20em;
+    height: 20em;
 `;
 
 const spin = keyframes`
@@ -35,8 +37,8 @@ const spin = keyframes`
 //parameterize animation delay
 const EyksArrow = styled.div`
     & {
-        height: 20em;
-        width: 20em;
+        height: 100%;
+        width: 100%;
         border-radius: 50%;
         position: relative;
         animation: ${spin} linear infinite;
@@ -121,9 +123,9 @@ const TriangleDownWhite = styled.div`
 
 
 const EyksLoader = ({ size=8, color="rgba(154, 27, 21, 255)", spinDelay=0, glowingColor="rgb(190, 4, 4)",
-                        speed=1.5, statusBar, done }) => {
+                        speed=1.5, statusBar, done, ...otherProps }) => {
     return (
-        <Container size={size}>
+        <Container size={size} {...otherProps} >
             <EyksArrow  animationDuration={convertSpeedToMs(speed)} color={color} spinDelay={spinDelay}>
                 <TriangleUp color={color} />
                 <TriangleUpWhite />
