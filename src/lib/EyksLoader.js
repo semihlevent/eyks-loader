@@ -208,17 +208,20 @@ const StatusBar = ({ statusBar, done, color, glowingColor }) => {
     const [progress, setProgress] = useState(0);
 
     useEffect(() => {
+        
+        if (done) setProgress(100);
+
         const interval = setInterval(() => {
-            if (done) {
-                setProgress(100);
-            } else if (progress < 100) {
+            if (progress < 100) {
                 const remaining = 100 - progress;
                 const increase = remaining * (0.03 * remaining / 100);
                 setProgress(progress + increase);
             }
         }, 300);
+
         return () => clearInterval(interval);
-    }, );
+        
+    }, [progress, done]);
 
     if (!statusBar) return null;
 
