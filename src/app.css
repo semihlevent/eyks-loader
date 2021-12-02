@@ -1,8 +1,12 @@
 html {
-	background-color: white;
+	/* background-color: rgb(194, 48, 48); */
+	/* mix-blend-mode: multiply; */
 }
 body {
-	background-color: white;
+	background-color: rgb(63, 63, 63);
+	/* mix-blend-mode: lighten; */
+	/* background-color: rgb(218, 158, 158);
+	mix-blend-mode: multiply; */
 	margin: 0;
 }
 

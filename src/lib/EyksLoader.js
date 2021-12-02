@@ -15,13 +15,12 @@ const convertSpeedToMs = speed => {
     // X = 10000, V = speed, t = duration in ms
     return `${10000 / speed}ms`;
 }
-
+//mix-blend-mode: multiply;
 const Container = styled.div`
     position: relative;
     font-size: ${props => `${props.size}px`};
-    background-color: white;
+    background-color: ${props => props.backgroundColor};
     border-radius: 50%;
-    mix-blend-mode: multiply;
     width: 20em;
     height: 20em;
 `;
@@ -55,7 +54,7 @@ const EyksArrow = styled.div`
         right: 1.75em;
         left: 1.75em;
 
-        background-color: white;
+        background-color: ${props => props.backgroundColor};
         border-radius: 50%;
     }
 `;
@@ -80,7 +79,7 @@ const TriangleUpWhite = styled.div`
     position: absolute;
     width: 0;
     height: 0;
-    border-bottom: 3.5em solid white;
+    border-bottom: ${props => `3.5em solid ${props.backgroundColor}`};
     border-left: 2em solid transparent;
     border-right: 2em solid transparent;
 
@@ -110,7 +109,7 @@ const TriangleDownWhite = styled.div`
     position: absolute;
     width: 0;
     height: 0;
-    border-top: 3.5em solid white;
+    border-top: ${props => `3.5em solid ${props.backgroundColor}`};
     border-left: 2em solid transparent;
     border-right: 2em solid transparent;
 
@@ -123,14 +122,18 @@ const TriangleDownWhite = styled.div`
 
 
 const EyksLoader = ({ size=8, color="rgba(154, 27, 21, 255)", spinDelay=0, glowingColor="rgb(190, 4, 4)",
-                        speed=1.5, statusBar, done, ...otherProps }) => {
+                        speed=1.5, statusBar, done, backgroundColor="white", ...otherProps }) => {
     return (
-        <Container size={size} {...otherProps} >
-            <EyksArrow  animationDuration={convertSpeedToMs(speed)} color={color} spinDelay={spinDelay}>
+        <Container size={size} backgroundColor={backgroundColor}  {...otherProps} >
+            <EyksArrow  animationDuration={convertSpeedToMs(speed)} 
+                color={color} 
+                spinDelay={spinDelay} 
+                backgroundColor={backgroundColor} 
+            >
                 <TriangleUp color={color} />
-                <TriangleUpWhite />
+                <TriangleUpWhite backgroundColor={backgroundColor} />
                 <TriangleDown color={color} />
-                <TriangleDownWhite />
+                <TriangleDownWhite backgroundColor={backgroundColor} />
             </EyksArrow>
             <StatusBar 
                 statusBar={statusBar} 
@@ -145,7 +148,6 @@ const EyksLoader = ({ size=8, color="rgba(154, 27, 21, 255)", spinDelay=0, glowi
 const StatusBarContainer = styled.div`
 &{
     height: 0.3em;
-	
 	border-radius: 0.3em;
     border-color: ${props => props.color};
 	position: absolute;

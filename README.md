@@ -24,7 +24,11 @@ Size prop is a numeric property. Set the size as desired. Default value is `8`.
 
 ## `color`
 
-Color prop is a css color property. Default value is `rgba(154, 27, 21, 255)`. This is the main color of the loader.
+Color prop is a css color property. Default value is `rgba(154, 27, 21, 255)`.
+
+## `backgroundColor`
+
+BackgroundColor prop is a css color property. Default value is `white`.
 
 ## `speed`
 

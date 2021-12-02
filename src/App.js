@@ -22,9 +22,12 @@ const App = () => {
         //     <p>Rem, quidem expedita vitae nisi optio totam labore doloremque odio provident necessitatibus maxime, in excepturi dolores inventore tempore ea recusandae. Iste corporis tempore consectetur fugiat unde repellendus minima nesciunt exercitationem natus facilis itaque corrupti quas perspiciatis quia eaque accusantium inventore nam aut saepe, aspernatur maxime ea consequuntur dolorem aperiam? Nulla!</p>
         // </div>
         <EyksLoader 
+            color="white"
+            backgroundColor="rgb(63, 63, 63)"
+            glowingColor="white"
             done={done} 
             statusBar
-            size={15}
+            size={8}
             spinDelay={300}
     />
     );
