@@ -8,6 +8,8 @@ Below are the props that can be used to customize loader:
 
 #### -color
 
+#### -backgroundColor
+
 #### -speed
 
 #### -spinDelay
