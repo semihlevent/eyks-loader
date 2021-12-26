@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import EyksLoader from './lib/EyksLoader';
 // import {EyksLoader} from '../dist';
 import './app.css';
+import BoardMembersLoader from './lib/BoardMembersLoader';
 
 
 
@@ -21,15 +22,17 @@ const App = () => {
         //     <p>Adipisci odit veritatis commodi quisquam blanditiis alias recusandae eligendi consequuntur id architecto repellat velit nihil, eum voluptatem asperiores assumenda quis explicabo! Fuga, quisquam, iste reprehenderit aut architecto quasi quibusdam accusantium labore maxime quaerat ipsum. Id non labore veritatis rem, enim odit, earum distinctio reiciendis odio eum aliquid expedita voluptatum dolor.</p>
         //     <p>Rem, quidem expedita vitae nisi optio totam labore doloremque odio provident necessitatibus maxime, in excepturi dolores inventore tempore ea recusandae. Iste corporis tempore consectetur fugiat unde repellendus minima nesciunt exercitationem natus facilis itaque corrupti quas perspiciatis quia eaque accusantium inventore nam aut saepe, aspernatur maxime ea consequuntur dolorem aperiam? Nulla!</p>
         // </div>
-        <EyksLoader 
-            color="white"
-            backgroundColor="rgb(63, 63, 63)"
-            glowingColor="white"
-            done={done} 
-            statusBar
-            size={8}
-            spinDelay={300}
-    />
+        // <EyksLoader 
+        //     color="white"
+        //     backgroundColor="rgb(63, 63, 63)"
+        //     glowingColor="white"
+        //     done={done} 
+        //     statusBar
+        //     size={8}
+        //     spinDelay={300}
+        // />
+        <BoardMembersLoader />
+
     );
 }
 

@@ -3,7 +3,7 @@ html {
 	/* mix-blend-mode: multiply; */
 }
 body {
-	background-color: rgb(63, 63, 63);
+	background-color: whitesmoke;
 	/* mix-blend-mode: lighten; */
 	/* background-color: rgb(218, 158, 158);
 	mix-blend-mode: multiply; */
@@ -24,4 +24,131 @@ body {
 	width: 50%;
 	background-color: rgb(240, 214, 143);
 	position: relative;
+}
+
+.world__vertical {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	transform-style: preserve-3d;
+}
+
+.world__vertical::after {
+	content: "";
+	background-color: #262626;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 47.5%;
+	width: 5%;
+	z-index: -10;
+}
+
+.world__vertical::before {
+	content: "";
+	background-color: #262626;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 47.5%;
+
+	transform: rotateY(-90deg);
+	width: 5%;
+	z-index: -10;
+}
+
+.world__horizontal {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	transform-style: preserve-3d;
+}
+
+.world__horizontal::after {
+	content: "";
+	background-color: #262626;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 47.5%;
+	height: 5%;
+	z-index: -10;
+}
+
+.world__horizontal::before {
+	content: "";
+	background-color: #262626;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 47.5%;
+	height: 5%;
+	transform: rotateY(-90deg);
+	z-index: -10;
+}
+
+.world__container {
+	position: relative;
+	transform-style: preserve-3d;
+	transition: 3s linear;
+	width: 20em;
+	height: 19em;
+	/* font-size: 15px; */
+}
+
+.world__circle {
+	top: 0;
+	left: 0;
+	width: 17em; /*20 - (1.5em tickness * 2)*/
+	height: 16em;
+	border-radius: 100%;
+	border: solid 1.5em #262626;
+	/* background-size: 100% 100%; */
+	background-color: transparent;
+	position: absolute;
+	transform-style: preserve-3d;
+}
+
+.world__container:hover {
+	transform: rotateY(90deg);
+	/* font-size: 20px; */
+}
+
+.board__members {
+	background-color: darkorange;
+	position: relative;
+	z-index: -2;
+	font-size: 9px;
+	width: 40em;
+	height: 40em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	background: linear-gradient(30deg, #971f20 38%, #6c6d70 38%) 0 0,
+		linear-gradient(-30deg, #971f20 38%, #6c6d70 38%) 100% 0,
+		linear-gradient(0deg, #971f20 0%, #971f20 0%) 0 100%,
+		linear-gradient(0deg, #971f20 0%, #971f20 0%) 100% 100%;
+	/*linear-gradient(36deg, transparent 57.66%, #e1e23b 57.66%) 100% 100%,
+		linear-gradient(72deg, transparent 24.52%, #f7941e 24.52%) 100% 100%,
+		linear-gradient(-36deg, transparent 57.66%, #662a6c 57.66%) 0 100%,
+		linear-gradient(-72deg, transparent 24.52%, #9a1d34 24.52%) 0 100%,
+		#43a1cd linear-gradient(#ba3e2e, #ba3e2e) 50% 100%; */
+
+	background-repeat: no-repeat;
+	background-size: 50% 50%;
+}
+
+.board__members::after {
+	width: 26.66em;
+	height: 26.66em;
+	content: "";
+	z-index: -1;
+	position: absolute;
+	background-color: white;
+	border-radius: 50%;
 }
