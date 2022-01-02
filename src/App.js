@@ -3,12 +3,14 @@ import EyksLoader from './lib/EyksLoader';
 // import {EyksLoader} from '../dist';
 import './app.css';
 import BoardMembersLoader from './lib/BoardMembersLoader';
+import World from './lib/World';
 
 
 
 
 const App = () => {
     const [done, setDone] = useState(false);
+    const [spinning, setSpinning] = useState(false);
 
     setTimeout(() => setDone(true), 8000)
 
@@ -31,7 +33,19 @@ const App = () => {
         //     size={8}
         //     spinDelay={300}
         // />
-        <BoardMembersLoader />
+        <div 
+            style={{fontSize: "5px"}} 
+            onMouseEnter={() => setSpinning(true)}
+            onMouseLeave={() => setSpinning(false)}
+        >
+            <BoardMembersLoader 
+                // size={4}
+                spin={true} spinDuration={"150s"} 
+                worldSpin={true} worldSpinDuration={"90s"}
+                // backgroundColor="lightblue"
+                // colorPrimary="white"
+            />
+        </div>
 
     );
 }
