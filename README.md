@@ -75,6 +75,8 @@ CSS length
 
 ## `EyksLoader`
 
+Props:
+
 #### -size
 
 #### -color
@@ -93,6 +95,8 @@ CSS length
 
 ## `BoardMembersLoader`
 
+Props:
+
 #### -size
 
 #### -colorPrimary
@@ -110,6 +114,8 @@ CSS length
 #### -worldSpinDuration
 
 ## `World`
+
+Props:
 
 #### -size
 
