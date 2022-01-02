@@ -39,8 +39,8 @@ const App = () => {
             onMouseLeave={() => setSpinning(false)}
         >
             <BoardMembersLoader 
-                // size={4}
-                spin={true} spinDuration={"150s"} 
+                size={4}
+                spin={true} spinDuration={"150s"}
                 worldSpin={true} worldSpinDuration={"90s"}
                 // backgroundColor="lightblue"
                 // colorPrimary="white"
