@@ -112,10 +112,11 @@ const WorldHorizontalLine = styled.div`
 const WorldCircle1 = styled.div`
     position: absolute;
 	transform-style: preserve-3d;
+    box-sizing: border-box;
     top: 0;
 	left: 0;
-    width: ${props => `calc(20em - ${props.thickness} - ${props.thickness})`};
-    height: ${props => `calc(20em - ${props.thickness} - ${props.thickness})`};
+    width: 20em;
+    height: 20em;
     border-radius: 100%;
 	border: ${({ thickness, color }) => `solid ${thickness} ${color}`};
     background-color: transparent;

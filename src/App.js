@@ -34,14 +34,14 @@ const App = () => {
         //     spinDelay={300}
         // />
         <div 
-            style={{fontSize: "5px"}} 
+            style={{fontSize: "15px"}} 
             onMouseEnter={() => setSpinning(true)}
             onMouseLeave={() => setSpinning(false)}
         >
-            <BoardMembersLoader 
+            <World 
                 // size={4}
                 spin={true} spinDuration={"150s"} 
-                worldSpin={true} worldSpinDuration={"90s"}
+                // worldSpin={true} worldSpinDuration={"90s"}
                 // backgroundColor="lightblue"
                 // colorPrimary="white"
             />
