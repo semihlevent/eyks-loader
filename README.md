@@ -1,8 +1,8 @@
 # eyks-loader
 
-Eyks loader is a React component used in e-BDS (Electronic Board Meeting) application developped by [MKK (Central Repository of Turkey)](https://www.mkk.com.tr/). Loader consists of two circular arrows (logo of Eyks) and an optional status bar.
+<!-- Eyks loader is a React component used in e-BDS (Electronic Board Meeting) application developped by [MKK (Central Repository of Turkey)](https://www.mkk.com.tr/). Loader consists of two circular arrows (logo of Eyks) and an optional status bar. -->
 
-Below are the props that can be used to customize loader:
+Below are the props that can be used to customize loaders:
 
 #### -size
 
@@ -19,6 +19,14 @@ Below are the props that can be used to customize loader:
 #### -done
 
 #### -glowingColor
+
+#### -spin
+
+#### -spinDuration
+
+#### -worldSpin
+
+#### -worldSpinDuration
 
 ## `size`
 
@@ -52,3 +60,63 @@ When set to `true` status bar progress set to 100% in 300ms
 ## `glowingColor`
 
 Glowing color prop is a css color property. Default value is `rgb(190, 4, 4)`. This value is used in status bar to add glowing effect.
+
+## `spin, worldSpin`
+
+A Boolean property. When set to true, spin animation begins.
+
+## `spinDuration, worldSpinDuration`
+
+CSS duration
+
+## `thickness`
+
+CSS length
+
+## `EyksLoader`
+
+#### -size
+
+#### -color
+
+#### -backgroundColor
+
+#### -spinDelay
+
+#### -glowingColor
+
+#### -speed
+
+#### -statusBar
+
+#### -done
+
+## `BoardMembersLoader`
+
+#### -size
+
+#### -colorPrimary
+
+#### -colorSecondary
+
+#### -backgroundColor
+
+#### -spin
+
+#### -spinDuration
+
+#### -worldSpin
+
+#### -worldSpinDuration
+
+## `World`
+
+#### -size
+
+#### -thickness
+
+#### -color
+
+#### -spin
+
+#### -spinDuration
