@@ -4,6 +4,7 @@ import EyksLoader from './lib/EyksLoader';
 import './app.css';
 import BoardMembersLoader from './lib/BoardMembersLoader';
 import World from './lib/World';
+// import {World as WorldDist} from '../dist/index';
 
 
 
