@@ -110,7 +110,7 @@ const WorldHorizontalLine = styled.div`
 `;
 
 const WorldCircle1 = styled.div`
-    & {
+    &{
         position: absolute;
         transform-style: preserve-3d;
         box-sizing: border-box;
@@ -123,6 +123,18 @@ const WorldCircle1 = styled.div`
         background-color: transparent;
         padding: 20px;
     }
+    // &::before {
+    //     border-radius: 100%;
+    //     content: '';
+    //     background-image: linear-gradient(to bottom, #3acfd5 0%, #3a4ed5 100%);
+    //     padding: ${({ thickness }) => `${thickness}`};
+    //     width: 100%;
+    //     height:100%;
+    //     top: ${({ thickness }) => `-${thickness}`};
+    //     left:${({ thickness }) => `-${thickness}`};
+    //     position: absolute;
+    //     z-index:-1;
+    // }
 `;
 
 const WorldCircle2 = styled(WorldCircle1)`
