@@ -121,7 +121,6 @@ const WorldCircle1 = styled.div`
         border-radius: 100%;
         border: ${({ thickness, color }) => `solid ${thickness} ${color}`};
         background-color: transparent;
-        padding: 20px;
     }
     // &::before {
     //     border-radius: 100%;
