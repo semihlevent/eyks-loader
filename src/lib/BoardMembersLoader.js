@@ -17,12 +17,12 @@ import World from './World';
             </div> */}
 
 const BoardMembersLoader = props => {
-    const { size, colorPrimary="#6c6d6f", colorSecondary="#971f20", backgroundColor="white",
+    const { size, colorPrimary="#6c6d6f", colorSecondary="#971f20", worldColor=colorPrimary, backgroundColor="white",
         spin, spinDuration="90s", worldSpin, worldSpinDuration
     } = props;
 
     const passingProps = {size, colorPrimary, colorSecondary, backgroundColor, spin, spinDuration };
-    const worldProps = {color: colorPrimary, spin: worldSpin, spinDuration: worldSpinDuration};
+    const worldProps = {color: worldColor, spin: worldSpin, spinDuration: worldSpinDuration};
     //size: 3.2 6.8
     return (
         <Container {...passingProps}>

@@ -119,6 +119,9 @@ const WorldCircle1 = styled.div`
     height: 20em;
     border-radius: 100%;
 	border: ${({ thickness, color }) => `solid ${thickness} ${color}`};
+    // border-image: linear-gradient(#f6b73c, #4d9f0c) 30;
+    // border-width: 4px;
+    // border-style: solid;
     background-color: transparent;
 `;
 

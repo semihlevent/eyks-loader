@@ -4,7 +4,7 @@ import EyksLoader from './lib/EyksLoader';
 import './app.css';
 import BoardMembersLoader from './lib/BoardMembersLoader';
 import World from './lib/World';
-// import {World as WorldDist} from '../dist/index';
+import {World as WorldDist} from '../dist/index';
 
 
 
@@ -39,10 +39,11 @@ const App = () => {
             onMouseEnter={() => setSpinning(true)}
             onMouseLeave={() => setSpinning(false)}
         >
-            <World 
-                // size={4}
+            <BoardMembersLoader
+                size={4}
                 spin={true} spinDuration={"150s"} 
-                // worldSpin={true} worldSpinDuration={"90s"}
+                worldSpin={true} worldSpinDuration={"90s"}
+                worldColor="#4de54d"
                 // backgroundColor="lightblue"
                 // colorPrimary="white"
             />
