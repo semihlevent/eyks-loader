@@ -119,21 +119,9 @@ const WorldCircle1 = styled.div`
         width: 20em;
         height: 20em;
         border-radius: 100%;
-        // border: ${({ thickness, color }) => `solid ${thickness} ${color}`};
+        border: ${({ thickness, color }) => `solid ${thickness} ${color}`};
         background-color: transparent;
         padding: 20px;
-    }
-    &::before {
-        border-radius: 100%;
-        content: '';
-        background-image: linear-gradient(to bottom, #3acfd5 0%, #3a4ed5 100%);
-        padding:${({ thickness }) => `${thickness}`};
-        width: 100%;
-        height:100%;
-        top: ${({ thickness }) => `-${thickness}`};
-        left:${({ thickness }) => `-${thickness}`};
-        position:absolute;
-        z-index:-1;
     }
 `;
 
